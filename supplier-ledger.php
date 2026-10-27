@@ -201,8 +201,8 @@ include __DIR__ . '/includes/header.php';
             </div>
 
             <div style="margin-left: 10px;">
-              <a href="<?= BASE_URL ?>transaction-details.php?id=<?= $tx['id'] ?>" class="btn btn-outline btn-sm" title="Details / Receipt" style="padding: 4px 8px; font-size: 11px;">
-                👁️
+              <a href="<?= BASE_URL ?>transaction-details.php?id=<?= $tx['id'] ?>" class="btn btn-outline btn-sm" title="Details / Receipt" aria-label="View supplier transaction details" style="padding: 4px 8px; font-size: 12px; font-weight: 600;">
+                Details
               </a>
             </div>
           </div>

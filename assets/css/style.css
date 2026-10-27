@@ -46,6 +46,7 @@
 
 [dir="rtl"] {
   font-family: var(--font-urdu), var(--font-sans);
+  line-height: 1.85;
 }
 
 * {
