@@ -1,0 +1,104 @@
+/**
+ * Hisabio - Professional Clean Print Stylesheet
+ * For statements, receipts, and financial summaries
+ */
+
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  /* Hide UI chrome */
+  .app-header,
+  .app-sidebar,
+  .bottom-nav,
+  .floating-add-btn,
+  .btn,
+  .filter-bar,
+  .search-box,
+  #toast-container,
+  #offline-banner,
+  .no-print {
+    display: none !important;
+  }
+
+  .main-content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .page-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* Print Header with Business Branding */
+  .print-header {
+    display: block !important;
+    border-bottom: 2px solid #087F5B;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+
+  .print-header .biz-name {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #087F5B;
+  }
+
+  .print-header .biz-meta {
+    font-size: 10pt;
+    color: #4B5563;
+  }
+
+  /* Print Table */
+  table.print-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 15px;
+  }
+
+  table.print-table th,
+  table.print-table td {
+    border: 1px solid #D1D5DB !important;
+    padding: 8px 10px !important;
+    font-size: 10pt !important;
+    text-align: left;
+  }
+
+  table.print-table th {
+    background-color: #F3F4F6 !important;
+    font-weight: bold !important;
+  }
+
+  [dir="rtl"] table.print-table th,
+  [dir="rtl"] table.print-table td {
+    text-align: right;
+  }
+
+  .print-footer {
+    display: block !important;
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #E5E7EB;
+    font-size: 9pt;
+    color: #6B7280;
+    text-align: center;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}

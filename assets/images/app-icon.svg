@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#087F5B" />
+      <stop offset="100%" stop-color="#065F46" />
+    </linearGradient>
+    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A7F3D0" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#043828" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Ledger Grid Watermark Pattern -->
+  <g opacity="0.06" stroke="#FFFFFF" stroke-width="2">
+    <line x1="80" y1="120" x2="432" y2="120" />
+    <line x1="80" y1="180" x2="432" y2="180" />
+    <line x1="80" y1="240" x2="432" y2="240" />
+    <line x1="80" y1="300" x2="432" y2="300" />
+    <line x1="80" y1="360" x2="432" y2="360" />
+    <line x1="160" y1="80" x2="160" y2="432" />
+    <line x1="352" y1="80" x2="352" y2="432" />
+  </g>
+
+  <!-- Ledger Book Spine & Left Page -->
+  <g filter="url(#subtleShadow)">
+    <!-- Back Spine Base -->
+    <path d="M120 130 C120 115 132 104 148 104 L244 104 C252 104 256 110 256 116 L256 396 C256 404 248 408 240 408 L148 408 C132 408 120 396 120 380 Z" fill="#E6F4EA" />
+    
+    <!-- Left Ledger Page Lines -->
+    <rect x="150" y="152" width="76" height="8" rx="4" fill="#087F5B" opacity="0.8" />
+    <rect x="150" y="184" width="60" height="8" rx="4" fill="#087F5B" opacity="0.4" />
+    <rect x="150" y="216" width="70" height="8" rx="4" fill="#087F5B" opacity="0.4" />
+    <rect x="150" y="248" width="52" height="8" rx="4" fill="#087F5B" opacity="0.4" />
+    <rect x="150" y="280" width="66" height="8" rx="4" fill="#087F5B" opacity="0.4" />
+    
+    <!-- Right Ledger Page -->
+    <path d="M256 116 C256 110 260 104 268 104 L364 104 C380 104 392 115 392 130 L392 380 C392 396 380 408 364 408 L272 408 C264 408 256 404 256 396 Z" fill="#FFFFFF" />
+
+    <!-- Ledger Binding Seam -->
+    <line x1="256" y1="104" x2="256" y2="408" stroke="#CBD5E1" stroke-width="4" stroke-dasharray="8 6"/>
+
+    <!-- Prominent Dynamic Checkmark / Growth Wave across Ledger -->
+    <path d="M208 266 L250 308 L348 184" fill="none" stroke="#087F5B" stroke-width="32" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Secondary Mint Accent Tip -->
+    <path d="M280 230 L350 178" fill="none" stroke="url(#mintGrad)" stroke-width="12" stroke-linecap="round" />
+  </g>
+
+  <!-- Small Upward Financial Clarity Indicator dot -->
+  <circle cx="360" cy="154" r="14" fill="#34D399" />
+</svg>

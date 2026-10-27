@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <linearGradient id="logoIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#087F5B" />
+      <stop offset="100%" stop-color="#065F46" />
+    </linearGradient>
+    <linearGradient id="mintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A7F3D0" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon Mark Container -->
+  <g transform="translate(8, 8)">
+    <rect width="64" height="64" rx="16" fill="url(#logoIconGrad)"/>
+    <!-- Left page -->
+    <path d="M15 15 C15 13 17 12 19 12 L31 12 L31 52 L19 52 C17 52 15 51 15 49 Z" fill="#E6F4EA" />
+    <line x1="19" y1="20" x2="27" y2="20" stroke="#087F5B" stroke-width="2" stroke-linecap="round"/>
+    <line x1="19" y1="26" x2="25" y2="26" stroke="#087F5B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <line x1="19" y1="32" x2="27" y2="32" stroke="#087F5B" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <!-- Right page -->
+    <path d="M33 12 L45 12 C47 12 49 13 49 15 L49 49 C49 51 47 52 45 52 L33 52 Z" fill="#FFFFFF" />
+    <!-- Checkmark -->
+    <path d="M26 34 L32 40 L45 22" fill="none" stroke="#087F5B" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Indicator dot -->
+    <circle cx="45" cy="18" r="2.5" fill="#34D399" />
+  </g>
+
+  <!-- Typography -->
+  <text x="86" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#172B24" letter-spacing="-0.5px">Hisab<tspan fill="#087F5B">io</tspan></text>
+  <text x="88" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#087F5B" letter-spacing="1.2px">SMART DIGITAL KHATA</text>
+</svg>
