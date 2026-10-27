@@ -58,20 +58,6 @@ function current_business(): ?array {
     return $business;
 }
 
-function has_permission(string $permission): bool {
-    $business = current_business();
-    if (!$business) {
-        return false;
-    }
-
-    $permissions = json_decode($business['permissions'] ?? '{}', true);
-    if (!empty($permissions['all'])) {
-        return true;
-    }
-
-    return !empty($permissions[$permission]);
-}
-
 function login_user(int $user_id, int $business_id): void {
     session_regenerate_id(true);
     $_SESSION['user_id'] = $user_id;

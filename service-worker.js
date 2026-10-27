@@ -12,7 +12,6 @@ const STATIC_ASSETS = [
   'assets/css/animations.css',
   'assets/css/print.css',
   'assets/js/app.js',
-  'assets/js/ajax.js',
   'assets/js/ledger.js',
   'assets/images/logo.svg',
   'assets/images/logo.png',
@@ -48,8 +47,8 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  // Network-first for all PHP pages and API endpoints (strict financial safety)
-  if (url.pathname.endsWith('.php') || url.pathname.includes('/api/')) {
+  // Network-first for all PHP pages (strict financial safety)
+  if (url.pathname.endsWith('.php')) {
     event.respondWith(
       fetch(event.request).catch(() => {
         return new Response('Offline - Please reconnect to save or view live financial records.', {

@@ -13,7 +13,6 @@
 
   <!-- Scripts -->
   <script src="<?= BASE_URL ?>assets/js/app.js?v=<?= APP_VERSION ?>"></script>
-  <script src="<?= BASE_URL ?>assets/js/ajax.js?v=<?= APP_VERSION ?>"></script>
   <script src="<?= BASE_URL ?>assets/js/ledger.js?v=<?= APP_VERSION ?>"></script>
 
   <!-- Trigger PHP Flash Messages -->
